@@ -1,0 +1,12 @@
+extends base
+block content
+    if errorMessage 
+        span=errorMessage
+    form(method="POST") 
+        input(type="email" ,name="email" ,placeholder="Email", value=loggedInUser.email)
+        input(type="text" ,name="username" ,placeholder="UserName", value=loggedInUser.username)
+        input(type="text" name="id" ,placeholder="ID" ,value=loggedInUser.id) 
+        input(type="text", name="location" ,placeholder="Location",value=loggedInUser.location)
+        input(type="submit" ,value="Upload Profile")
+        div.auth-switch
+            a(href="/users/changepassword") Change PassWord &rarr; 

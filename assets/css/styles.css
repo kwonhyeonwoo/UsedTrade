@@ -1,0 +1,412 @@
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/js/scss/styles.scss ***!
+  \*************************************************************************************************************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__logo {
+  color: #ff1300;
+  font-size: 38px;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul li {
+  margin-left: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+header i {
+  font-size: 16px;
+}
+header .header__btn {
+  background-color: white;
+  color: #191919;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.deal-mixin {
+  width: 202px;
+  height: 281px;
+  border: 1px solid gray;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.deal-mixin .deal-mixin__thumb {
+  height: 140px;
+}
+.deal-mixin .deal-mixin__thumb img {
+  width: 100%;
+  height: 150px;
+}
+.deal-mixin .deal-mixin__data {
+  margin-left: 20px;
+}
+.deal-mixin .deal-mixin__data .deal-mixin__title {
+  font-size: 18px;
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.deal-mixin .deal-mixin__data .deal-mixin__address {
+  opacity: 0.4;
+}
+.deal-mixin .deal-mixin__data .deal-mixin__description {
+  display: block;
+  margin-top: 8px;
+}
+.deal-mixin .deal-mixin__data .deal-mixin__price {
+  display: block;
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.empty__message {
+  margin-bottom: 50px;
+  font-size: 10px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+}
+.auth-switch span {
+  margin-right: 10px;
+}
+
+form {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 237, 203, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 165, 0, 0.2);
+}
+form input {
+  all: unset;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: orange;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: white;
+  width: 90%;
+  position: relative;
+}
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+form input[name=description] {
+  height: 150px;
+}
+form input[type=submit] {
+  border-radius: 5px;
+  padding: 12px 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  cursor: pointer;
+}
+
+.empty__message {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 18px;
+  margin-top: 100px;
+  margin-left: 370px;
+}
+
+.deal-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 40px;
+}
+.auth-switch a {
+  text-decoration: underline;
+}
+
+.deal-watch {
+  margin: 0 auto;
+  width: 250px;
+}
+.deal-watch .loggedInUser {
+  margin-top: 20px;
+}
+.deal-watch .loggedInUser a {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.deal-watch .deal-watch__thumb {
+  height: 140px;
+  border-radius: 7px;
+}
+.deal-watch .deal-watch__thumb img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
+.deal-watch .deal-watch__data .deal-watch__title {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+.deal-watch .deal-watch__data .deal-watch__description {
+  opacity: 0.5;
+  display: block;
+  margin-top: 5px;
+}
+.deal-watch .deal-watch__data .deal-watch__hashtags {
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  margin-top: 15px;
+}
+.deal-watch .deal-watch__data .deal-watch__profile {
+  display: block;
+  margin-top: 80px;
+}
+
+.search__form {
+  margin-bottom: 60px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.search__form input {
+  all: unset;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: orange;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: white;
+  width: 90%;
+  position: relative;
+}
+.search__form button {
+  all: unset;
+  position: absolute;
+  right: 15px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+}
+
+form {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 237, 203, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 165, 0, 0.2);
+}
+
+input {
+  all: unset;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: orange;
+  margin-bottom: 5px;
+  color: white;
+  width: 90%;
+  position: relative;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input[type=submit] {
+  border-radius: 5px;
+  padding: 12px 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  cursor: pointer;
+}
+
+input[placeholder=HashTags] {
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  color: black;
+  position: relative;
+  width: 800px;
+  margin: 8px auto 0;
+}
+body header .photo {
+  background: url(../92a7d172935806b700e4.jpg) no-repeat center;
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+}
+
+main {
+  width: 800px;
+  margin: auto 0;
+  margin-top: 250px;
+  height: 500px;
+}

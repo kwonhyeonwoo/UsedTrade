@@ -1,0 +1,22 @@
+header
+    a(href="/").header__logo Carret
+    div.photo   
+    nav
+        ul
+            li 
+                a(href="/search")
+                    i.fas.fa-search  
+            if loggedIn
+                li 
+                    a(href=`/users/${loggedInUser._id}`) my profile  
+                li 
+                    a(href="/users/logout") logOut 
+                li  
+                    a(href="/users/edit") edit
+                li  
+                    a(href="/deal/upload") upload  
+            else 
+                li 
+                    a(href="/login").header__btn login
+                li  
+                    a(href="/join") join

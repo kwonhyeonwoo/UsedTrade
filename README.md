@@ -1,2 +1,8 @@
 # UsedTrade
-중고거래사이트 코딩
+language / framework / DB
+node.js express Mongodb
+
+Process to start
+npm i express
+npm run dev
+

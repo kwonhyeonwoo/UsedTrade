@@ -1,5 +1,7 @@
 # UsedTrade
-
-npm i express 설치 /n
--> npm run dev 실행 
-
+# Process Stact
+Node.js , JavaScript
+# DB
+MongoDB
+# FrameWork
+Express

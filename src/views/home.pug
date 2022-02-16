@@ -1,0 +1,20 @@
+extends base
+include mixin/deal
+block content
+    div.deal-grid 
+        each deal in deals
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+            +deal(deal)
+        else 
+            span.empty__message Not found Photo.
+    
+    

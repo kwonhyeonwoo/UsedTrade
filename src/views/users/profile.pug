@@ -1,0 +1,8 @@
+extends ../base
+include ../mixin/deal.pug
+block content   
+    div.deal-grid
+        each deal in deals
+            +deal(deal)
+        else 
+            span.empty__message No videos found    

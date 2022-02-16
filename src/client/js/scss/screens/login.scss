@@ -1,0 +1,13 @@
+.login__form {
+  input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid gray;
+    display: block;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  input[type="submit"] {
+    background-color: orange;
+  }
+}

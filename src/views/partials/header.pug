@@ -1,0 +1,23 @@
+header
+    div.header-nav
+        a(href="/").header__logo 중고시장
+        nav.header-nav__bar
+            ul  
+                li 
+                    a(href="/search")
+                        i.fas.fa-search  
+                if loggedIn
+                    li 
+                        a(href=`/users/${loggedInUser._id}`) my profile  
+                    li 
+                        a(href="/users/logout") logOut 
+                    li  
+                        a(href="/users/edit") edit
+                    li  
+                        a(href="/deal/upload") upload  
+                else 
+                    li 
+                        a(href="/login").header__btn login
+                    li  
+                        a(href="/join") join
+    sdiv.header-photo

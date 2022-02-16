@@ -1,0 +1,17 @@
+extends base
+block content
+    div.deal-watch
+        div.deal-watch__thumb
+            img(src="/" + deal.avatarUrl)
+        div.deal-watch__data
+            span.deal-watch__profile
+                a(href=`/users/${loggedInUser._id}`) #{deal.owner.username} 의 Profile
+            span.deal-watch__title  #{deal.title}
+            span.deal-watch__address=deal.address
+            span.deal-watch__price #{deal.price}  
+            hr
+        span.deal-watch__description  #{deal.description}
+            div.loggedInUser
+                if String(deal.owner._id) === String(loggedInUser._id)
+                    a(href=`/deal/${deal.id}/edit`)  Edit &rarr;
+                    a(href=`/deal/${deal.id}/delete`)  Delete &rarr;

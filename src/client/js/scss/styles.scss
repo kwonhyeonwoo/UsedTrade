@@ -1,0 +1,41 @@
+//config(리셋, 변수 등)
+@import "./config/_variables.scss";
+@import "./config/_reset.scss";
+
+//Components (header, main , footer ...)
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/video.scss";
+@import "./components/shared.scss";
+@import "./components/join.scss";
+@import "./components/profile.scss";
+@import "./components/watch.scss";
+//Screens
+@import "./screens/search.scss";
+@import "./screens/upload.scss";
+@import "./screens/login.scss";
+//Defaults
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+body {
+  width: 1200px;
+  margin: 0 auto;
+  header {
+    .header-photo {
+      background: url(img/boots.jpg) no-repeat center;
+      width: 100%;
+      height: 300px;
+      display: flex;
+    }
+  }
+}
+
+main {
+  margin-top: 20px;
+  text-align: center;
+}
